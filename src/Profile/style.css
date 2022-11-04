@@ -1,0 +1,13 @@
+.pimg {
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0 10px;
+}
+
+.big-card {
+    width: 400px;
+    margin: auto;
+    margin-top: 15px;
+}

@@ -1,0 +1,13 @@
+.form {
+    text-align: left;
+    width: 320px;
+}
+
+.loginBtn {
+    margin-top: 20px;
+}
+
+label {
+    margin-top: 5px;
+    font-size: 13px;
+}

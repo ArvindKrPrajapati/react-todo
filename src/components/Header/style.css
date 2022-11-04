@@ -1,0 +1,22 @@
+.header {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: wheat;
+    padding: 5px;
+}
+
+.img {
+    width: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-left: 10px;
+}
