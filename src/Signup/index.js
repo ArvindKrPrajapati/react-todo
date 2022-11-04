@@ -16,7 +16,7 @@ export default function Signup() {
         const name = e.target[0].value;
         const mobile = e.target[1].value;
         const password = e.target[2].value;
-        if (mobile?.length == 10 && password?.length >= 8) {
+        if (mobile?.length === 10 && password?.length >= 8) {
             setLoading(true)
             const res = await _signup(name, mobile, password)
             if (res?.success) {

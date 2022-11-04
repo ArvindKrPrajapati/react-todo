@@ -16,7 +16,7 @@ export default function Login() {
         setError('')
         const mobile = e.target[0].value;
         const password = e.target[1].value;
-        if (mobile?.length == 10 && password?.length >= 8) {
+        if (mobile?.length === 10 && password?.length >= 8) {
             setLoading(true)
             const res = await _login(mobile, password)
             if (res?.success) {

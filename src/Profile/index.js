@@ -58,7 +58,7 @@ export default function Profile() {
             return
         }
         if (password && newpass) {
-            if (password == newpass) {
+            if (password === newpass) {
                 setPasswordError("old password and new pasword must not be same")
             } else {
                 setChangingPass(true)
@@ -93,6 +93,7 @@ export default function Profile() {
                             <div className='col d-flex align-items-center justify-content-center p-3'>
                                 <img src='https://preview.redd.it/dh5otp8kcf741.png?width=640&crop=smart&auto=webp&s=d795f12b5e3eea1ef4d7ceb8244fca98e2384dbf'
                                     className='pimg'
+                                    alt="img"
                                 />
                                 <div>
                                     <h4>{user.name}</h4>

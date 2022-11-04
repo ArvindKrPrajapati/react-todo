@@ -28,7 +28,7 @@ export default function Card({ task, setData }) {
         if (res?.success) {
             setData(current =>
                 current.map(obj => {
-                    if (obj._id == todoid) {
+                    if (obj._id === todoid) {
                         return { ...obj, done };
                     }
                     return obj;
@@ -43,6 +43,7 @@ export default function Card({ task, setData }) {
     return (
         <div className='col-md-3 col-12'>
             <div className='card m-2'>
+                <small className='text-danger'>{error}</small>
                 <p>{task.task}</p>
                 <div className='d-flex justify-content-between mt-2 align-items-center'>
                     <button disabled={deleting} onClick={deleteTask} className='btn'>

@@ -134,7 +134,7 @@ export const formatDate = (d) => {
     const pd = new Date(d)
     const nd = new Date(Date.now())
     let t = Math.floor(Number(nd.getTime() - pd.getTime()) / 60000)
-    let dd = nd.getDate() - pd.getDate()
+    // let dd = nd.getDate() - pd.getDate()
     if (t === 0) {
         return "Just Now";
     }

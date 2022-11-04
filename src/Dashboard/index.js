@@ -38,10 +38,11 @@ export default function Dashboard() {
                 <div className='row'>
                     <div className='col'>
                         <h2>Pending Todos</h2>
+                        <small className='text-danger'>{error}</small>
                     </div>
                 </div>
                 {loading && <div className='loading'>loading....</div>}
-                {(!loading && data.length == 0) ?
+                {(!loading && data.length === 0) ?
                     <div className='loading'>No Pending todos</div>
                     :
                     <div className='row'>
